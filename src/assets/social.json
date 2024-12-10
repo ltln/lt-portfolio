@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Facebook",
+        "type": "link",
+        "data": "https://www.facebook.com/ltln3005",
+        "display": "icon"
+    },
+    {
+        "name": "Email",
+        "type": "email",
+        "data": "louis@lt.id.vn",
+        "display": "card"
+    },
+    {
+        "name": "GitHub",
+        "type": "link",
+        "data": "https://github.com/ltln",
+        "display": "icon"
+    },
+    {
+        "name": "Discord",
+        "type": "username",
+        "data": "ltln",
+        "display": "card"
+    }
+]
