@@ -36,7 +36,7 @@ const routes = [
 export default function SidebarBody() {
     const pathname = "/" + (usePathname()).split("/")[1];
     return (
-        <>
+        <div className="">
             <div className="flex flex-col items-center">
                 <div className="relative">
                     <Image src={LT_Vest} alt="lt-vest" className="rounded-full" width={150} />
@@ -72,9 +72,9 @@ export default function SidebarBody() {
                     <SiGithub className="h-4" />                
                 </Link>
             </div>
-            <div className="mt-12 text-center">
+            <div className="mt-12 text-center max-[1023px]:hidden">
                 <ThemeToggle />
             </div>
-        </>
+        </div>
     )
 }

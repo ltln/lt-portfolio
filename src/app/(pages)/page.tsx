@@ -3,7 +3,7 @@ import LTSayHi from "@/assets/imgs/lt.webp";
 
 export default function Home() {
   return (
-    <div className="w-full px-8 flex relative h-full">
+    <div className="w-full px-8 flex relative min-h-[700px] h-screen">
       <Image src={LTSayHi} alt="" height={500} className="absolute bottom-0 right-8 max-md:hidden" style={{ filter: 'brightness(1.2) drop-shadow(0 0 8px rgb(59 130 246)' }} />
       <div className="mt-52 font-noto max-w-[480px]">
         <p className="text-2xl">Hello there,</p>

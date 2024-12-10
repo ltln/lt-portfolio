@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production ts-node src/server/index.ts",
     "lint": "next lint",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "husky"
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/express": "^5.0.0",
     "@types/node": "^20",
     "@types/react": "^18",

@@ -1,15 +1,11 @@
 // import { type Author } from "./author";
-export type Author = {
-  name: string;
-  url: string;
-};
 
 export type Post = {
   slug: string;
   title: string;
   date: number;
   coverImage: string;
-  author: Author;
+  author: string;
   excerpt: string;
   ogImage: {
     url: string;
@@ -24,10 +20,7 @@ export const postEmpty: Post = {
   title: "",
   date: 0,
   coverImage: "",
-  author: {
-    name: "",
-    url: "",
-  },
+  author: "",
   excerpt: "",
   ogImage: {
     url: "",
