@@ -1,6 +1,7 @@
 import { Post } from "@/lib/interfaces";
 import { getAllPosts } from "@/lib/posts";
 import { cn } from "@/lib/utils";
+import { format } from "date-fns";
 import Link from "next/link";
 
 export default function PostList() {
@@ -17,7 +18,7 @@ export default function PostList() {
                 <Link href={"/posts/" + post.slug} className={cn(index == 0 ? "col-span-full" : "col-span-1", "max-lg:col-span-full")} key={index}>
                     <div style={{ background: 'linear-gradient(0deg, rgba(0,0,1,0.7), rgba(255,255,255,0) 60%), url("' + post.coverImage + '") center / cover no-repeat' }} className="w-full h-48 flex justify-end flex-col px-8 py-4 rounded-lg">
                         <p className="text-3xl text-white font-bold">{post.title}</p>
-                        <p className="text-sm text-zinc-300">{post.author} • {post.date}</p>
+                        <p className="text-sm text-zinc-300">{post.author} • {format(post.date, "PPP")}</p>
                     </div>
                 </Link>
             ))}

@@ -4,11 +4,17 @@ import { Menu } from "lucide-react";
 import { Sheet, SheetContent } from "../ui/sheet";
 import SidebarBody from "./Body";
 import { DialogTitle } from "../ui/dialog";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ThemeToggle from "../ThemeToggle";
+import { usePathname } from "next/navigation";
 
 export default function NavigationSidebar() {
     const [open, setOpen] = useState<boolean>(false);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        setOpen(false);
+    }, [pathname])
 
     return (
         <>

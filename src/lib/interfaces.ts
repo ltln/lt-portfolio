@@ -3,7 +3,7 @@
 export type Post = {
   slug: string;
   title: string;
-  date: number;
+  date: string;
   coverImage: string;
   author: string;
   excerpt: string;
@@ -18,7 +18,7 @@ export type Post = {
 export const postEmpty: Post = {
   slug: "",
   title: "",
-  date: 0,
+  date: "1970-01-01 00:00:00 +0000",
   coverImage: "",
   author: "",
   excerpt: "",
